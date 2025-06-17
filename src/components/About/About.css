@@ -1,0 +1,17 @@
+.about {
+    padding: 60px 20px;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.about-text {
+    margin-top: 20px;
+    line-height: 1.6;
+}

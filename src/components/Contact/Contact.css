@@ -1,0 +1,48 @@
+.contact {
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    color: #000;
+}
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container ul {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    list-style-type: none;
+}
+
+ul li .icon {
+    font-size: 25px;
+}
+
+ul li .icon.whatsapp {
+    color: rgb(3, 107, 26);
+}
+
+ul li .icon.email {
+    color: rgb(231, 46, 46);
+}
+
+.contact h2 {
+    font-size: 28px;
+}
+
+i:nth-of-type(3) {
+    color: blue;
+}
+
+li i {
+    color: blue;
+}
+
+li .mail {
+    font-size: 25px;
+    color: red;
+}
