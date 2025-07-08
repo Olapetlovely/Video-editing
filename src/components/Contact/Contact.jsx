@@ -17,7 +17,7 @@ const Contact = () => {
                             <span className='icon whatsapp'><IoLogoWhatsapp /></span></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/vieren-b-benjamin" target="_blank">
+                        <a href="https://www.linkedin.com/in/vieren-b-benjamin-620a52296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
                             <span className='icon linked-in'><FaLinkedin /></span></a>
                     </li>
                     <li>

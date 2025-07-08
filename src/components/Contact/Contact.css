@@ -30,6 +30,11 @@ ul li .icon.email {
     color: rgb(231, 46, 46);
 }
 
+ul li .icon.linked-in {
+    color: rgb(0, 23, 100);
+}
+
+
 .contact h2 {
     font-size: 28px;
 }

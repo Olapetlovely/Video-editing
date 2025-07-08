@@ -1,22 +1,39 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link } from "react-scroll";
 import { TfiMenu } from "react-icons/tfi";
 import { RiCloseLargeFill } from "react-icons/ri";
+import faithLogo from "../../assets/img/FaithLogo.png"
 
 const Header = () => {
 
-    const [mobileMenu, setMobileMenu] = useState(false)
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const [logo, setLogo] = useState(false)
 
     function toggleMenu() {
         mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
-    }
+    };
+
+    const handleResize = () => {
+        if (window.innerWidth < 519) {
+            setLogo(true);
+        } else {
+            setLogo(false);
+        }
+    };
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
 
 
     return (
         <header className="header">
             <nav>
-                <h1 className="logo">VideoEditorPro</h1>
+                {logo ? <img className='logo' src={faithLogo} alt="logo" /> : <p>FaithBen Craft</p>}
                 <ul className={mobileMenu ? "nav-links" : "nav-links hide"}>
                     <li><Link to="about" smooth={true} offset={-30} duration
                         ={500}>About</Link>
