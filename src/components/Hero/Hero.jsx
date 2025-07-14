@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import './Hero.css';
 import { FaArrowRightLong } from "react-icons/fa6";
-import faithImg from "../../assets/img/faithImg.jpg"
-import hero1 from "../../assets/img/hero1.png"
-import hero2 from "../../assets/img/hero2.png"
-import hero3 from "../../assets/img/background-img.png"
-import hero4 from "../../assets/img/download.png"
-import { TfiMenu } from "react-icons/tfi";
-import { RiCloseLargeFill } from "react-icons/ri";
+import faithBen from "../../assets/img/faithBen.jpg";
+import faithImg from "../../assets/img/faithImg.jpg";
+import hero1 from "../../assets/img/hero1.png";
+import hero4 from "../../assets/img/hero4.jpg";
+import hero3 from "../../assets/img/background-img.png";
+import hero6 from "../../assets/img/hero6.jpg";
 
 
 const Hero = ({ projectRef }) => {
@@ -34,14 +33,14 @@ const Hero = ({ projectRef }) => {
                         We bring it to life.</p>
                 </div>
                 <div className="img-container">
-                    <div className="img-wrapper"><img src={hero1} alt="image" /></div>
+                    <div className="img-wrapper"><img className='hero2' src={hero4} alt="image" /></div>
+                    <div className="img-wrapper"><img src={hero6} alt="image" /></div>
                     <div className="img-wrapper"><img src={hero3} alt="image" /></div>
-                    <div className="img-wrapper"><img className='hero2' src={hero2} alt="image" /></div>
                 </div >
             </div>
             <div className="hero-section2">
                 <div className="img-wrapper">
-                    <img src={faithImg} alt="" />
+                    <img src={faithBen} alt="FaithBen" />
                 </div>
             </div>
         </section >

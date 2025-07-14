@@ -1,9 +1,15 @@
 import React, { useState, useRef } from 'react'
 import './Projects.css';
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import hero1 from "../../assets/img/hero1.png"
-import hero2 from "../../assets/img/hero2.png"
-import hero3 from "../../assets/img/background-img.png"
+import Video from './Video/Video';
+import project1 from "../../assets/video/Project1.mp4"
+import project2 from "../../assets/video/Project2.mp4"
+import project3 from "../../assets/video/Project3.mp4"
+import project4 from "../../assets/video/Project4.mp4"
+import project5 from "../../assets/video/Project5.mp4"
+import project6 from "../../assets/video/Project6.mp4"
+import project7 from "../../assets/video/Project7.mp4"
+import project8 from "../../assets/video/Project8.mp4"
 
 const Projects = ({ projectRef }) => {
 
@@ -30,15 +36,23 @@ const Projects = ({ projectRef }) => {
         <section className="projects" ref={projectRef}>
             <div className="slider" >
                 <div className="slider-track" ref={sliderRef}>
-                    <div className='card'>
-                        <img src={hero2} alt="" />
-                    </div>
-                    <div className='card'>
-                        <img src={hero1} alt="" />
-                    </div>
-                    <div className="card">
-                        <img src={hero3} alt="" />
-                    </div>
+                    <Video
+                        src={project1}
+                    />
+                    <Video
+                        src={project2}
+                    />
+                    <Video src={project3}
+                    />
+                    <Video src={project4}
+                    />
+                    <Video src={project5} />
+                    <Video src={project6}
+                    />
+                    <Video src={project7}
+                    />
+                    <Video src={project8}
+                    />
                 </div>
             </div>
             <div className="arrow-wrapper">

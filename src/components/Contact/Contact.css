@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.contact-container h2 {
+    margin-bottom: 0.8rem;
+}
+
 .contact-container ul {
     display: flex;
     justify-content: center;
