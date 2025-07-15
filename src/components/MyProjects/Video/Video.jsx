@@ -11,7 +11,6 @@ const Video = forwardRef(({ src }, ref) => {
                 src={src}
                 controls
                 autoPlay
-                muted
                 playsInline
                 type="video/mp4"
             />
