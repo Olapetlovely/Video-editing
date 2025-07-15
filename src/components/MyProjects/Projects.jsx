@@ -9,7 +9,7 @@ import project4 from "../../assets/video/Project4.mp4"
 import project5 from "../../assets/video/Project5.mp4"
 import project6 from "../../assets/video/Project6.mp4"
 import project7 from "../../assets/video/Project7.mp4"
-import project8 from "../../assets/video/Project8.mp4"
+import project10 from "../../assets/video/Project10.mp4"
 
 const Projects = ({ projectRef }) => {
 
@@ -37,10 +37,13 @@ const Projects = ({ projectRef }) => {
             <div className="slider" >
                 <div className="slider-track" ref={sliderRef}>
                     <Video
-                        src={project1}
+                        src={project2}
                     />
                     <Video
-                        src={project2}
+                        src={project10}
+                    />
+                    <Video
+                        src={project1}
                     />
                     <Video src={project3}
                     />
@@ -50,8 +53,6 @@ const Projects = ({ projectRef }) => {
                     <Video src={project6}
                     />
                     <Video src={project7}
-                    />
-                    <Video src={project8}
                     />
                 </div>
             </div>

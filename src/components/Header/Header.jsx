@@ -3,7 +3,7 @@ import "./Header.css";
 import { Link } from "react-scroll";
 import { TfiMenu } from "react-icons/tfi";
 import { RiCloseLargeFill } from "react-icons/ri";
-import faithLogo from "../../assets/img/FaithLogo.png"
+import faithLogo from "../../assets/img/logo2.png"
 
 const Header = () => {
 
