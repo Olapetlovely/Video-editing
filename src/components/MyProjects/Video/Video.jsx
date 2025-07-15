@@ -1,19 +1,22 @@
 import React from 'react';
 import "./Video.css";
+import { forwardRef } from 'react';
 
-const Video = ({ src }) => {
+const Video = forwardRef(({ src }, ref) => {
     return (
         <div className='card'>
-            <video className='my-video'
+            <video
+                ref={ref}
+                className='my-video'
                 src={src}
                 controls
-                type="video/mp4"
                 autoPlay
                 muted
                 playsInline
-            ></video>
+                type="video/mp4"
+            />
         </div>
-    )
-}
+    );
+});
 
-export default Video
+export default Video;
